@@ -30,8 +30,8 @@ jobs:
           context: ./  # Adjust the context to the subdirectory
           push: true
           tags: |
-            ghcr.io/openlmis-changelog/open-lmis-changelog:latest
-            ghcr.io/openlmis-changelog/open-lmis-changelog:${{ github.ref_name }}
+            ghcr.io/openlmis-angola/open-lmis-changelog:latest
+            ghcr.io/openlmis-angola/open-lmis-changelog:${{ github.ref_name }}
 
       - name: Log out of GitHub Container Registry
         run: docker logout ghcr.io
